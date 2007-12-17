@@ -12,7 +12,6 @@ Source0: 	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{module}-%{vers
 Requires: 	perl
 BuildRequires:	perl-devel
 BuildArch: 	noarch
-BuildRoot: 	%{_tmppath}/%{name}-buildroot
 
 %description
 %{module} module for perl.  This Perl module implements ordered
