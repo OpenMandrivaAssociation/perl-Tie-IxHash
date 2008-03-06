@@ -4,7 +4,7 @@
 Summary: 	%{module} module for perl
 Name: 		perl-%{module}
 Version: 	1.21
-Release: 	%mkrel 8
+Release: 	%mkrel 9
 License: 	GPL or Artistic
 Group: 		Development/Perl
 URL:            http://search.cpan.org/search?dist=%{module}
