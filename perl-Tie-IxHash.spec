@@ -1,5 +1,5 @@
 %define upstream_name    Tie-IxHash
-%define upstream_version 1.21
+%define upstream_version 1.22
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary: 	%{upstream_name} module for perl
 License: 	GPL+ or Artistic
 Group: 		Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}/
-Source0: 	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Tie/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0: 	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Tie/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildArch: 	noarch
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}
@@ -23,10 +23,10 @@ in-memory associative arrays.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-make
+%make
 
 %check
-make test
+%make test
 
 %install
 rm -rf %{buildroot}
