@@ -1,14 +1,14 @@
 %define modname	Tie-IxHash
-%define modver	1.22
+%define modver 1.23
 
 Summary:	%{modname} module for perl
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	10
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Tie/%{modname}-%{modver}.tar.gz
+Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Tie/Tie-IxHash-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
 
@@ -33,4 +33,5 @@ in-memory associative arrays.
 %doc Changes README
 %{perl_vendorlib}/Tie/IxHash.pm
 %{_mandir}/man3/*
+
 
