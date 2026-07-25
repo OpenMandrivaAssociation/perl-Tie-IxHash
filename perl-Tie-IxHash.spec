@@ -3,12 +3,12 @@
 
 Summary:	%{modname} module for perl
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	10
+Version:	%{modver}
+Release:	11
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{modname}/
-Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Tie/Tie-IxHash-%{modver}.tar.gz
+Url:		https://github.com/chorny/Tie-IxHash
+Source0:	https://cpan.metacpan.org/authors/id/C/CH/CHORNY/Tie-IxHash-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl(Test::More)
